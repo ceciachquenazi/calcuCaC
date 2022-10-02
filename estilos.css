@@ -49,9 +49,26 @@ button {
 
 .pantalla__resultado {
     
-    background-color: rgb(179, 179, 179);
+    display: grid;
+    flex-direction: column;
+    text-align: right;
+    align-items: center;
+    background-color: rgb(192, 222, 218);
     width: 80%;
-    height: 50%;
+    height: 75%;
+    margin-top: 1%;
+}
+
+.pantalla__resultado div {
+    padding: 0% 2%;
+}
+
+#valor_actual {
+    font-size: 1.5em;
+}
+
+#valor_anterior {
+ font-size: 2em;   
 }
 
 .igual {

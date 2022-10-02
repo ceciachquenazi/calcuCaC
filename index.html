@@ -6,52 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script> <!-- si despues de type agrego la palabra defer puedo ponerlo en el head-->
 </head>
 <body>
     <div class="container">
         <div class="pantalla">
             <div class="pantalla__resultado">
-                <p>Resultado</p>
+                <div id="valor_anterior"></div>
+                <div id="valor_actual"></div>
             </div>
         </div>
         <div class="teclas">
-            <button> ( </button>
-            <button> ) </button>
-            <button> x! </button>
-            <button> x<sup>2</sup> </button>
-            <button> √ </button>
-            <button> <sup>n</sup>√ </button>
-            <button> sin </button>
-            <button> cos </button>
-            <button> tg </button>
-            <button> x<sup>3</sup> </button>
-            <button> <sup>3</sup>√ </button>
-            <button> x<sup>n</sup></button>
-            <button> 1 </button>
-            <button> 2 </button>
-            <button> 3 </button>
-            <button> / </button>
-            <button> % </button>
-            <button> ln </button>
-            <button> 4 </button>
-            <button> 5 </button>
-            <button> 6 </button>
-            <button> * </button>
-            <button> log </button>
-            <button> e </button>
-            <button> 7 </button>
-            <button> 8 </button>
-            <button> 9 </button>
-            <button> - </button>
-            <button> AC </button>
-            <button class="igual"> = </button>
-            <button> . </button>
-            <button> 0 </button>
-            <button> π </button>
-            <button> + </button>
-            <button> MR </button>
+            <button class="">(</button>
+            <button class="">)</button>
+            <button class="">x!</button>
+            <button class="">x<sup>2</sup></button>
+            <button class="">√</button>
+            <button class=""><sup>n</sup>√</button>
+            <button class="">sin</button>
+            <button class="">cos</button>
+            <button class="">tg</button>
+            <button class="">x<sup>3</sup></button>
+            <button class=""><sup>3</sup>√</button>
+            <button class="">x<sup>n</sup></button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="dividir">/</button>
+            <button class="">%</button>
+            <button class="">ln</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="multiplicar">*</button>
+            <button class="">log</button>
+            <button class="">e</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="restar">-</button>
+            <button onclick="display.borrarTodo()">AC</button>
+            <button class="operador igual" value="igual">=</button>
+            <button class="numero">.</button>
+            <button class="numero">0</button>
+            <button class="">π</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="">MR</button>
            
         </div>
     </div>
+    
 </body>
 </html>
